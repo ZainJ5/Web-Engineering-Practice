@@ -7,43 +7,44 @@
     <title>Task-1</title>
 </head>
 <body>
-    <form action="POST">
+    <form id="Form" method="POST">
      <h1 id="main">Welcome</h1>
      <p>Please complate the following registration form</p>
      <div>
      <label for="name">Name:</label>
-     <input type="text" id="name">
+     <input required type="text" id="name">
      </div>
      <div>
      <label for="email">Mailing Address:</label>
-     <input type="email" id="email">
+     <input required type="email" id="email">
      </div>
      <div class="flex">
      <label for="radio">What is your opinion on of this website:</label>
      <label>
-         <input type="radio" name="opnion" value="High" id="high"> High
+         <input required type="radio" name="opnion" value="High" id="high"> High
      </label>
      <label>
-        <input type="radio" name="opnion" value="Average" id="avg"> Average
+        <input required type="radio" name="opnion" value="Average" id="avg"> Average
      </label>
      <label>
-         <input type="radio" name="opnion" value="Low" id="low"> Low
+         <input required type="radio" name="opnion" value="Low" id="low"> Low
      </label>
      </div>
      <div>
      <label for="textbox">Additional Comments</label>
-     <textarea name="textbox" id="text"></textarea>
+     <textarea required name="textbox" id="text"></textarea>
      </div>
      <label for="dropdown">How did you learn about this website</label>
-     <select name="dropdown" id="dd">
+     <select required name="dropdown" id="dd">
         <option value="Facebook">Facebook</option>
-        <option value="Website">Website</option>
+        <option value="Ads">Ads</option>
         <option value="Word of mouth">Word of mouth</option>
      </select>
      <p>Please validate before submitting your registration</p>
      <button type="reset">Reset Form</button>
      <button type="submit">Submit Form</button>
-     <button type="button">Validate Form</button>
+     <button id="validatebutton" type="button">Validate Form</button>
     </form>
+    <script src="./script.js"></script>
 </body>
 </html>
