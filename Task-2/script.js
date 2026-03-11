@@ -38,3 +38,4 @@ categoryButtons.forEach(button => {
 });
 
 displayPhotos('birthday');
+console.log('hello ${hjds}')
